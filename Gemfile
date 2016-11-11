@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twitter'
 gem 'figaro'
 gem 'randumb'
+gem 'whenever', :require => false
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
