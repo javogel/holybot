@@ -9,7 +9,7 @@ class Bot < ApplicationRecord
     response = Wordnik.words.get_random_word(includePartOfSpeech: 'noun')
     word = response['word']
     tweet = 'Holy ' + word + '!'
-    puts "about to tweet: #{tweet}"
+    puts "...about to tweet: #{tweet}"
     CLIENT.update(tweet)
 
   end
