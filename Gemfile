@@ -33,6 +33,7 @@ gem 'twitter'
 gem 'figaro'
 gem 'randumb'
 gem 'whenever', :require => false
+gem 'wordnik'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
