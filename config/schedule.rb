@@ -19,7 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-
-every 2.minutes do
+every 1.hours do
   runner "Bot.tweet_random_holy"
 end
