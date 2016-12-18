@@ -25,7 +25,7 @@ Thread.new do
       sClient.user do |object|
         if object.is_a? Twitter::Streaming::Event and object.name==:follow
           user = object.source
-            rClient.create_direct_message user, "You, #{user.name}, are also holy! Holy @#{user.name}!"
+            rClient.create_direct_message user, "You, #{user.name}, are also holy! Holy @#{user.screen_name}!"
             # rClient.update "You, #{user.name}, are also Holy! Holy @#{user.screen_name}!"
             puts "New follower : #{user.name}"
         end
