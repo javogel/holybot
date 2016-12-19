@@ -6,7 +6,7 @@ class Bot < ApplicationRecord
   end
 
   def self.tweet_random_holy
-    response = Wordnik.words.get_random_word(includePartOfSpeech: 'noun')
+    response = Wordnik.words.get_random_word(includePartOfSpeech: 'noun', minCorpusCount: 2500)
     word = response['word']
     clean_word = word.gsub(/\W+/, '')
     tweet = 'Holy ' + word + '!' + " #" + clean_word
