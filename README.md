@@ -1,2 +1,2 @@
 # holybot
-a ginsburg inspired twitterbot
+a ginsberg inspired twitterbot
